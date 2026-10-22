@@ -23,6 +23,10 @@ The built-in SQLite-backed database is a good fit for metadata, not for storing 
 6. Review `npx tgcloud diff`. Do not run a migration until its full proposed schema change has been reviewed.
 7. Code sync (`npx tgcloud push`) and schema migration (`npx tgcloud migrate`) are separate operations; do not assume either one applies the other.
 
+## Validation
+
+Follow [the Phase 1 validation checklist](docs/validation-checklist.md) before any deployment. The checklist deliberately avoids push and migration commands.
+
 ## External worker design
 
 See [`docs/worker-api.md`](docs/worker-api.md) for a **design draft only** of the authenticated transfer-worker boundary, job states, download-token handling, expiry, and pre-implementation checks. No worker URL or credentials are configured and no worker calls are implemented yet.
