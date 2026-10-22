@@ -1,0 +1,20 @@
+{
+  "name": "file-to-link-bot-serverless",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Telegram Serverless metadata layer for File-to-Link Bot",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "check": "node --check tgcloud/schema.js && node --check tgcloud/handlers/message.js",
+    "diff": "tgcloud diff",
+    "deploy": "tgcloud push",
+    "migrate": "tgcloud migrate",
+    "status": "tgcloud status"
+  },
+  "devDependencies": {
+    "@tgcloud/cli": "^0.2.0"
+  }
+}
